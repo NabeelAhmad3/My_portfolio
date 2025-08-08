@@ -8,8 +8,6 @@ import { provideLottieOptions } from 'ngx-lottie';
 import { playerFactory } from './components/shared/animation-lottie/animation-lottie.component';
 import { provideHttpClient } from '@angular/common/http';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { RECAPTCHA_V3_SITE_KEY } from 'ng-recaptcha';
-import { environment } from '@/environments/environment';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -30,9 +28,6 @@ export const appConfig: ApplicationConfig = {
       closeButton: true,
       newestOnTop: true,
     }),
-    {
-      provide: RECAPTCHA_V3_SITE_KEY,
-      useValue: environment.recaptcha.siteKey  // Replace with your actual reCAPTCHA site key
-    }
+  
   ]
 };

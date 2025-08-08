@@ -1,13 +1,22 @@
-<div id="contact" class="my-12 lg:my-16 relative mt-24 text-white">
-    <div class="hidden lg:flex flex-col items-center absolute top-24 -right-8">
-        <span class="bg-[#1a1443] w-fit text-white rotate-90 p-2 px-5 text-xl rounded-md">
-            CONTACT
-        </span>
-        <span class="h-36 w-[2px] bg-[#1a1443]"></span>
+<div id="contact" class="relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
+    <img src="assets/section.svg" alt="Hero" class="absolute top-0 -z-10 w-full">
+
+    <div class="flex justify-center -translate-y-[1px]">
+        <div class="w-3/4">
+            <div class="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent w-full"></div>
+        </div>
+    </div>
+    <div class="flex justify-center my-5 lg:py-8">
+        <div class="flex items-center">
+            <span class="w-24 h-[2px] bg-[#1a1443]"></span>
+            <span class="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
+                Contact
+            </span>
+            <span class="w-24 h-[2px] bg-[#1a1443]"></span>
+        </div>
     </div>
 
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-        <app-contact-form></app-contact-form>
 
         <div class="lg:w-3/4">
             <div class="flex flex-col gap-5 lg:gap-9">
@@ -21,7 +30,7 @@
 
                 <p class="text-sm md:text-xl flex items-center gap-3">
                     <fa-icon [icon]="faPhone"
-                        class="bg-[#8b98a5] w-8 h-8 rounded-full hover:bg-cyan-400  hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer flex items-center justify-center"
+                        class="bg-[#8b98a5] w-8 h-8 rounded-full hover:bg-cyan-400 hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer flex items-center justify-center"
                         size="1x">
                     </fa-icon>
                     <span>{{personalData.phone}}</span>
@@ -29,7 +38,7 @@
 
                 <p class="text-sm md:text-xl flex items-center gap-3">
                     <fa-icon [icon]="faLocationDot"
-                        class="bg-[#8b98a5] w-8 h-8 rounded-full hover:bg-cyan-400  hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer flex items-center justify-center"
+                        class="bg-[#8b98a5] w-8 h-8 rounded-full hover:bg-cyan-400 hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer flex items-center justify-center"
                         size="1x">
                     </fa-icon>
                     <span>{{personalData.address}}</span>
@@ -39,28 +48,27 @@
             <div class="mt-8 lg:mt-16 flex items-center gap-5 lg:gap-10">
                 <a [href]="personalData.gmail" target="_blank">
                     <fa-icon [icon]="faEnvelope"
-                        class="bg-[#8b98a5] w-12 h-12 rounded-full hover:bg-cyan-400  hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer flex items-center justify-center"
+                        class="bg-[#8b98a5] w-12 h-12 rounded-full hover:bg-cyan-400 hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer flex items-center justify-center"
                         size="2x">
                     </fa-icon>
                 </a>
-
                 <a [href]="personalData.github" target="_blank">
                     <fa-icon [icon]="faGithub"
-                        class="bg-[#8b98a5] w-12 h-12 rounded-full hover:bg-cyan-400  hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer flex items-center justify-center"
+                        class="bg-[#8b98a5] w-12 h-12 rounded-full hover:bg-cyan-400 hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer flex items-center justify-center"
                         size="2x">
                     </fa-icon>
                 </a>
 
                 <a [href]="personalData.linkedIn" target="_blank">
                     <fa-icon [icon]="faLinkedin"
-                        class="bg-[#8b98a5] w-12 h-12 rounded-full hover:bg-cyan-400  hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer flex items-center justify-center"
+                        class="bg-[#8b98a5] w-12 h-12 rounded-full hover:bg-cyan-400 hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer flex items-center justify-center"
                         size="2x">
                     </fa-icon>
                 </a>
 
                 <a [href]="personalData.facebook" target="_blank">
                     <fa-icon [icon]="faFacebook"
-                        class="bg-[#8b98a5] w-12 h-12 rounded-full hover:bg-cyan-400  hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer flex items-center justify-center"
+                        class="bg-[#8b98a5] w-12 h-12 rounded-full hover:bg-cyan-400 hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer flex items-center justify-center"
                         size="2x">
                     </fa-icon>
                 </a>

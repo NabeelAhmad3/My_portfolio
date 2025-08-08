@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faGithub, faLinkedin, faFacebookSquare} from '@fortawesome/free-brands-svg-icons';
-import { faDownload } from '@fortawesome/free-solid-svg-icons';
+import { faDownload,faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { personalData } from '@/utils/data/personal-data';
 
 @Component({
@@ -15,6 +15,7 @@ import { personalData } from '@/utils/data/personal-data';
 })
 export class HeroSectionComponent {
   personalData = personalData;
+  faEnvelope = faEnvelope;
   faGithub = faGithub;
   faLinkedin = faLinkedin;
   faFacebook = faFacebookSquare;

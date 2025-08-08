@@ -4,12 +4,11 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faEnvelope, faPhone, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin, faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { personalData } from '../../../../utils/data/personal-data';
-import { ContactFormComponent } from '../contact-form/contact-form.component';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, FontAwesomeModule, ContactFormComponent,],
+  imports: [CommonModule, FontAwesomeModule],
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
 })

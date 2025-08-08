@@ -1,0 +1,48 @@
+<div class="bg-[#0f172a] p-6 rounded-lg border border-gray-700 w-full">
+    <h2 class="text-2xl font-semi-bold text-cyan-400 uppercase">Contact With Me</h2>
+    <p class="mt-2 text-gray-400 text-sm md:text-base">
+        If you have any questions or concerns, please don't hesitate to contact me.
+        I am open to any work opportunities that align with my skills and interests.
+    </p>
+
+    <form (ngSubmit)="handleSendMail($event)" class="mt-6 flex flex-col gap-4">
+
+        <div>
+            <label for="name" class="block text-sm font-medium mb-1 text-white">Your Name:</label>
+            <input id="name" type="text" name="name" [(ngModel)]="userInput.name"
+                class="w-full rounded-lg border border-gray-600 bg-transparent px-3 py-2 text-sm outline-none focus:border-cyan-400"
+                required>
+        </div>
+
+        <div>
+            <label for="email" class="block text-sm font-medium mb-1 text-white">Your Email:</label>
+            <input id="email" type="email" name="email" [(ngModel)]="userInput.email"
+                class="w-full rounded-lg border border-gray-600 bg-transparent px-3 py-2 text-sm outline-none focus:border-cyan-400"
+                required>
+        </div>
+
+        <div>
+            <label for="message" class="block text-sm font-medium mb-1 text-white">Your Message:</label>
+            <textarea id="message" name="message" [(ngModel)]="userInput.message"
+                class="w-full h-40 rounded-lg border border-gray-600 bg-transparent px-3 py-2 text-sm outline-none focus:border-cyan-400"
+                required></textarea>
+        </div>
+
+        <button type="submit" [disabled]="isLoading"
+            class="mt-3 flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 tracking-wider gap-1 hover:gap-6 px-6 py-3 text-white font-semibold uppercase tracking-wider transition-all duration-200 ease-out hover:from-blue-500 hover:to-cyan-500">
+            <ng-container *ngIf="isLoading; else notLoading">
+                Sending...
+            </ng-container>
+            <ng-template #notLoading>
+                Send Message <fa-icon [icon]="mailIcon"></fa-icon>
+            </ng-template>
+        </button>
+
+        <p class="mt-3 text-center" [ngClass]="{
+         'text-amber-500': statusMessage.includes('success'),
+         'text-red-500': statusMessage.includes('Failed') || statusMessage.includes('Please')
+       }">
+            {{ statusMessage }}
+        </p>
+    </form>
+</div>

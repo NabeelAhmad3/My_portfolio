@@ -12,7 +12,11 @@
 </h1>
 
 <div class="my-12 flex items-center gap-5">
-  <a [href]="personalData.github" target="_blank"
+  <a [href]="personalData.gmail" target="_blank"
+    class="transition-transform text-white hover:text-cyan-400 hover:scale-110 duration-300">
+    <fa-icon [icon]="faEnvelope" size="2x"></fa-icon>
+  </a>
+   <a [href]="personalData.github" target="_blank"
     class="transition-transform text-white hover:text-cyan-400 hover:scale-110 duration-300">
     <fa-icon [icon]="faGithub" size="2x"></fa-icon>
   </a>

@@ -6,9 +6,10 @@ export const personalData = {
   email: 'nabeelahmadkhan03@gmail.com',
   phone: '+923109822980',
   address: 'Islamabad, Pakistan',
+  gmail: 'https://mail.google.com/mail/?view=cm&fs=1&to=nabeelahmadkhan03@gmail.com',
   github: 'https://github.com/nabeelahmad3',
-  facebook: 'https://web.facebook.com/nabeelahmadkhan',
+  facebook: 'https://www.facebook.com/share/1BtXkow6a3/?mibextid=wwXIfr',
   linkedIn: 'https://www.linkedin.com/in/web-developer-nabeel/',
   devUsername: "nabeelahmad",
-  resume: "https://drive.google.com/file/d/1i-IFBc6x3Kn7GpSZWpvT6HBB66mxqkOl/view?usp=drive_link"
+  resume: "https://drive.google.com/file/d/1iOmSvW7waV1Blhs9urMEiieSHv9yrwOn/view?usp=drive_link"
 }
