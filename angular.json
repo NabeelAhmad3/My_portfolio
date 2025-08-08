@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngdevfolio": {
+    "nabeel_portfolio": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -16,7 +16,7 @@
             "customWebpackConfig": {
               "path": "./custom-webpack.config.js"
             },
-            "outputPath": "dist/ngdevfolio/browser",
+            "outputPath": "dist/nabeel_portfolio/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -73,10 +73,10 @@
           "builder": "@angular-builders/custom-webpack:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ngdevfolio:build:production"
+              "buildTarget": "nabeel_portfolio:build:production"
             },
             "development": {
-              "buildTarget": "ngdevfolio:build:development"
+              "buildTarget": "nabeel_portfolio:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -84,7 +84,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "ngdevfolio:build"
+            "buildTarget": "nabeel_portfolio:build"
           }
         },
         "test": {
