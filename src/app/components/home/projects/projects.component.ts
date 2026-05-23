@@ -52,24 +52,9 @@ export class ProjectsComponent {
     },
     {
       id: 3,
-      name: "Fiction Flare",
-      description: "A bloging website which user create blogs.",
-      tools: ["Angular 18", "Node Js", "MySql", "Xamp", "Git", "Vs Code"],
-      demo: "",
-      images: [
-        "assets/projects/10.png",
-        "assets/projects/11.png",
-        "assets/projects/12.png"
-      ],
-      role: "Full Stack Developer",
-      code: "https://github.com/NabeelAhmad3/bloggingApp.git"
-    },
-
-    {
-      id: 4,
       name: "HRMS",
       description: "HR managenemt system which cover all aspects of HR activities.",
-      tools: ["Angular 15", ".net boiler plate", "Ms Sql", "Git", "Vs Code"],
+      tools: ["Angular 15", ".net boiler plate", "MsSQL", "Git", "Vs Code"],
       demo: "",
       images: [
         "assets/projects/7.png",
@@ -81,7 +66,37 @@ export class ProjectsComponent {
       code: ""
     },
     {
+      id: 4,
+      name: "Virtual Healthcare",
+      description: "A healthcare mobile app for patient management, appointments, and medical record tracking.",
+      tools: ["Angular 20", "Ionic", "Capacitor", "Firebase", "Git", "Vs Code", "Android Studio"],
+      demo: "",
+      images: [
+        "assets/projects/10.png",
+        "assets/projects/11.png",
+        "assets/projects/12.png",
+        "assets/projects/12a.png"
+      ],
+      role: "Full Stack Developer",
+      code: "https://github.com/NabeelAhmad3/virtual_healthcare_ionic_app"
+    },
+    {
       id: 5,
+      name: "Pharmacy POS",
+      description: "A pharmacy POS system for managing sales, inventory, billing, and customer transactions.",
+      tools: ["Angular 21", "Electron", "Node Js", "Git", "Vs Code"],
+      demo: "",
+      images: [
+        "assets/projects/16.png",
+        "assets/projects/17.png",
+        "assets/projects/18.png",
+        "assets/projects/19.png"
+      ],
+      role: "Full Stack Developer",
+      code: "https://github.com/NabeelAhmad3/virtual_healthcare_ionic_app"
+    },
+    {
+      id: 6,
       name: "Humqadam Store",
       description: "An E-commerce website which user can buy different shoes.",
       tools: ["Wordpress", "Elementor", "Woo Commerce", "cPanel"],

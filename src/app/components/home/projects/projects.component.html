@@ -32,28 +32,26 @@
         <div *ngFor="let project of projects"
           class="rounded-xl shadow-lg overflow-hidden border border-[#1b2c68a0] bg-gradient-to-r from-[#0d1224] to-[#0a0d37] transition-transform hover:scale-[1.02] duration-300">
 
-         <div class="relative overflow-hidden group"
-     (mouseenter)="onMouseEnter(project.id)"
-     (mouseleave)="onMouseLeave(project.id, project.images.length)">
-  
-  <div
-    class="flex transition-transform duration-[1200ms] ease-[cubic-bezier(0.77,0,0.175,1)]"
-    [ngStyle]="{ transform: 'translateX(-' + activeImageIndex[project.id] * 100 + '%)' }"
-    style="width: 100%;">
-    
-    <div *ngFor="let img of project.images" class="min-w-full h-60 md:h-72">
-      <img [src]="img" alt="{{project.name}}" class="w-full h-full object-cover" />
-    </div>
-  </div>
+          <div class="relative overflow-hidden group" (mouseenter)="onMouseEnter(project.id)"
+            (mouseleave)="onMouseLeave(project.id, project.images.length)">
 
-  <div
-    class="absolute inset-0 flex items-center justify-between px-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-    <button (click)="prevSlide(project.id)"
-      class="bg-black bg-opacity-50 p-2 rounded-full text-white hover:bg-opacity-75">&#10094;</button>
-    <button (click)="nextSlide(project.id, project.images.length)"
-      class="bg-black bg-opacity-50 p-2 rounded-full text-white hover:bg-opacity-75">&#10095;</button>
-  </div>
-</div>
+            <div class="flex transition-transform duration-[1200ms] ease-[cubic-bezier(0.77,0,0.175,1)]"
+              [ngStyle]="{ transform: 'translateX(-' + activeImageIndex[project.id] * 100 + '%)' }"
+              style="width: 100%;">
+
+              <div *ngFor="let img of project.images" class="min-w-full">
+                <img [src]="img" alt="{{project.name}}" class="w-full object-contain bg-[#0d1224]" />
+              </div>
+            </div>
+
+            <div
+              class="absolute inset-0 flex items-center justify-between px-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <button (click)="prevSlide(project.id)"
+                class="bg-black bg-opacity-50 p-2 rounded-full text-white hover:bg-opacity-75">&#10094;</button>
+              <button (click)="nextSlide(project.id, project.images.length)"
+                class="bg-black bg-opacity-50 p-2 rounded-full text-white hover:bg-opacity-75">&#10095;</button>
+            </div>
+          </div>
 
 
           <div class="p-6 space-y-3">
