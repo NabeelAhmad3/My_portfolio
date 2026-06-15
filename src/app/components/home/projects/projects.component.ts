@@ -26,7 +26,7 @@ export class ProjectsComponent {
       name: "Car Bidding Website",
       description: "Car Bidding Website with users can sells and buy cars on auction.",
       tools: ["Angular 18", "Node Js", "MySql", "Xamp", "Git", "Vs Code"],
-      demo: "",
+      demo: "https://carbidding.netlify.app",
       images: [
         "assets/projects/1.png",
         "assets/projects/2.png",
@@ -40,7 +40,7 @@ export class ProjectsComponent {
       id: 2,
       name: "UniGuard",
       description: "Security system Website for university to access of pre register vehicles.",
-      tools: ["Angular 19", "Fast Api", "Postgress", "Pg Admin", "Git", "Vs Code"],
+      tools: ["Angular 19", "Fast Api", "Postgress", "Git", "Vs Code"],
       demo: "",
       images: [
         "assets/projects/4.png",
@@ -54,7 +54,7 @@ export class ProjectsComponent {
       id: 3,
       name: "HRMS",
       description: "HR managenemt system which cover all aspects of HR activities.",
-      tools: ["Angular 15", ".net boiler plate", "MsSQL", "Git", "Vs Code"],
+      tools: ["Angular 15", ".net boiler plate", "MS SQL Server", "Git", "Vs Code", "Visual Studio"],
       demo: "",
       images: [
         "assets/projects/7.png",
@@ -70,7 +70,7 @@ export class ProjectsComponent {
       name: "Virtual Healthcare",
       description: "A healthcare mobile app for patient management, appointments, and medical record tracking.",
       tools: ["Angular 20", "Ionic", "Capacitor", "Firebase", "Git", "Vs Code", "Android Studio"],
-      demo: "",
+      demo: "https://virtualhealing.netlify.app/",
       images: [
         "assets/projects/10.png",
         "assets/projects/11.png",
@@ -84,7 +84,7 @@ export class ProjectsComponent {
       id: 5,
       name: "Pharmacy POS",
       description: "A pharmacy POS system for managing sales, inventory, billing, and customer transactions.",
-      tools: ["Angular 21", "Electron", "Node Js", "Git", "Vs Code"],
+      tools: ["Angular 21", "Electron", "Node Js", "SQLite", "Git", "Vs Code"],
       demo: "",
       images: [
         "assets/projects/16.png",
@@ -97,17 +97,19 @@ export class ProjectsComponent {
     },
     {
       id: 6,
-      name: "Humqadam Store",
-      description: "An E-commerce website which user can buy different shoes.",
-      tools: ["Wordpress", "Elementor", "Woo Commerce", "cPanel"],
-      code: "",
+      name: "Smart Drive Tracking",
+      description: "A real-time GPS vehicle tracking app that monitors driver speed, trips, and overspeed alerts.",
+      tools: ["Angular 21", "Ionic", "Capacitor", "Node Js", "Postgres", "Git", "Vs Code", "Android Studio"],
+      demo: "https://smartdrivetracking.netlify.app",
       images: [
         "assets/projects/13.png",
         "assets/projects/14.png",
-        "assets/projects/15.png"
+        "assets/projects/15.png",
+        "assets/projects/16a.png",
+
       ],
-      role: "Wordpress Developer",
-      demo: "https://humqadam.store/"
+      role: "Full Stack Developer",
+      code: "https://github.com/NabeelAhmad3/SmartDrive-Frontend"
     }
   ];
 
@@ -129,7 +131,7 @@ export class ProjectsComponent {
   startAutoSlide(projectId: number, totalImages: number): void {
     this.intervals[projectId] = setInterval(() => {
       this.nextSlide(projectId, totalImages);
-    }, 4000);
+    }, 5000);
   }
 
   nextSlide(projectId: number, total: number): void {
