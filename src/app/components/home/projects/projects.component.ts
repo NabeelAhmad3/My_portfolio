@@ -53,16 +53,16 @@ export class ProjectsComponent {
     {
       id: 3,
       name: "HRMS",
-      description: "HR managenemt system which cover all aspects of HR activities.",
+      description: "HR managenemt system a software solution that streamlines employee management, payroll, attendance, recruitment, and HR operations in one platform.",
+      demo: "https://hrmsui.thepointofit.com",
       tools: ["Angular 15", ".net boiler plate", "MS SQL Server", "Git", "Vs Code", "Visual Studio"],
-      demo: "",
       images: [
         "assets/projects/7.png",
         "assets/projects/8.png",
         "assets/projects/9.png",
-        "assets/projects/99.png"
+        "assets/projects/9a.png"
       ],
-      role: "Angular Developer",
+      role: "Full Stack Developer",
       code: ""
     },
     {
